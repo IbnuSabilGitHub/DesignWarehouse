@@ -1,0 +1,708 @@
+:root {
+  --clr-bg: #0f0e17;
+  --headline: #fffffe;
+  --hightLight: #e53170;
+  --paragaraf: #a7a9be;
+}
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--headline);
+  font-family: "Quicksand", sans-serif;
+}
+
+.txt-hightLight {
+  color: var(--hightLight);
+}
+
+.paragarfColor {
+  color: var(--paragaraf);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.icon i {
+  color: var(--paragaraf);
+  transition: 50ms;
+}
+
+.icon i:hover {
+  color: var(--headline);
+}
+
+/* Navigasi */
+nav {
+  height: 3em;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+nav .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3em;
+  margin: 0em 4.5em 0em 4.5em;
+}
+
+nav .content .title {
+  display: flex;
+  align-items: center;
+}
+
+nav .content .title img {
+  width: 2em;
+  border-radius: 50%;
+}
+
+nav .content .title h6 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 1em;
+  color: var(--hightLight);
+}
+
+nav .content .icon {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .content .icon li {
+  font-size: 1.1em;
+  margin: 0em 1em 0em 1em;
+}
+/* Navigasi  end*/
+.webMargin {
+  height: 100vh;
+}
+nav .content .icon .search {
+  position: relative;
+}
+nav .content .icon .search p {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: var(--paragaraf);
+
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  transition: 200ms;
+}
+
+nav .content .icon .search:hover p {
+  opacity: 1;
+  visibility: visible;
+  color: var(--headline);
+  top: 0.2em;
+  left: -4em;
+}
+section .main-title {
+  position: relative;
+  height: 100%;
+  padding: 0em 3% 0rem;
+  overflow: hidden;
+}
+
+section .main-title .title {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+section .main-title .title h1 {
+  z-index: 10;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+section .main-title .title p {
+  margin-top: 1em;
+  width: 16em;
+}
+
+section .main-title button {
+  background-color: transparent;
+  border: solid 1px var(--hightLight);
+  border-radius: 0.3em;
+  width: max-content;
+  margin-top: 2.5vh;
+  transition: 50ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .main-title button:hover {
+  background-color: var(--hightLight);
+}
+
+section .main-title button .link-download {
+  color: var(--paragaraf);
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.2em 1.2em;
+}
+
+section .main-title button:hover .link-download {
+  color: var(--headline);
+}
+
+/* elemet kafka section 1 */
+
+.Element-Img {
+  z-index: -1;
+  position: absolute;
+  right: -10em;
+  top: -25em;
+  background-color: #fffffe;
+  transform: rotate(45deg);
+  border-radius: 3em;
+  width: 60em;
+  height: 60em;
+  overflow: hidden;
+  background-image: url("/Image/elment1Kafka/Kafka_3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* elemet kafka section 1 enddd*/
+
+/* GRUP STYLE PICTURE */
+
+.img-dispaly {
+  padding: 0em 3% 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 0fr));
+  gap: 10rem;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+section .picture {
+  position: relative;
+  width: 12.5em;
+  height: 15em;
+}
+
+section .picture .display {
+  width: 12.5em;
+  height: 12.5em;
+  border-radius: 0.6em;
+  overflow: hidden;
+  position: relative;
+}
+section .picture .display .btn-download {
+  bottom: 0.5em;
+  left: -2.3em;
+  position: absolute;
+  border: none;
+  width: 15%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  transition: 600ms ease-out;
+  z-index: 10;
+}
+
+section .picture .display .btn-download i {
+  color: var(--hightLight);
+  font-size: 1em;
+  display: block;
+}
+section .picture .display:hover img {
+  filter: blur(2px);
+}
+section .picture .display:hover .btn-download {
+  left: 0.5em;
+}
+section .picture img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13em;
+  transition: 600ms ease-out;
+}
+
+section .picture .title {
+  margin-top: 0.3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section .picture .title .txt h3 {
+  font-size: 1.3em;
+}
+
+section .picture .title .txt p {
+  font-size: 0.8em;
+  margin-top: 1px;
+  color: var(--paragaraf);
+}
+
+section .picture .title .type {
+  color: var(--paragaraf);
+  transition: 50ms;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+section .picture .title .type p {
+  font-size: 0.8em;
+}
+
+section .picture .title .type .btn-type {
+  display: flex;
+  width: 5.5em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .picture .title .type .btn-type .icon-type {
+  transition: 200ms linear;
+}
+
+section .picture .title .type:hover {
+  color: var(--headline);
+}
+
+section .picture .title .type .select-type {
+  background-color: var(--headline);
+  width: 5.5em;
+  border-radius: 3px;
+  color: var(--clr-bg);
+  margin-top: 0.5em;
+  z-index: 8;
+  position: absolute;
+  top: 10em;
+  visibility: hidden;
+  opacity: 0;
+  transition: 200ms linear;
+}
+
+section .picture .title .type .select-type ul {
+  padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+section .picture .title .type .select-type ul li {
+  padding: 0.2em;
+  text-align: center;
+  transition: 100ms;
+  border-radius: 2px;
+}
+
+section .picture .title .type .select-type ul li:hover {
+  background-color: var(--paragaraf);
+}
+
+section .picture .title .type .select-type ul li p {
+  font-size: 0.7em;
+}
+
+section .picture .title .type .type-active {
+  z-index: 8;
+  top: 13.6em;
+  visibility: visible;
+  opacity: 1;
+}
+
+section .picture .title .type .hight-light {
+  color: var(--hightLight);
+}
+
+/* Overlay select- format */
+
+section .picture .select-format {
+  background-color: var(--headline);
+  border-radius: 5px;
+  width: 12em;
+  height: max-content;
+  padding: 0.2em 0.3em 0.3em 0.2em;
+  position: absolute;
+  top: 10em;
+  left: 3.5em;
+  display: none;
+  transition: 50ms;
+}
+
+
+
+
+section .picture .select-format h6 {
+  color: var(--clr-bg);
+  font-size: 0.7em;
+}
+section .picture .select-format ul li {
+  margin: 0.5em 0em 0.5em 0em;
+  padding: 0.3em;
+  border-radius: 6px;
+  transition: 100ms;
+}
+
+section .picture .select-format ul li:hover {
+  background-color: var(--paragaraf);
+}
+section .picture .select-format ul li a {
+  text-decoration: none;
+}
+
+section .picture .select-format ul li a p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .picture .select-format ul li a p .name {
+  color: var(--hightLight);
+  font-size: 0.8em;
+}
+
+section .picture .select-format ul li a p .size {
+  font-size: 0.7em;
+  color: var(--clr-bg);
+}
+
+/* Overlay select- format */
+
+/* Overlay Search */
+section {
+  transition: 300ms;
+}
+
+.Overlay-search {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  height: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 800ms;
+}
+
+.Overlay-search .Search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.Overlay-search .Search .style-search {
+  background-color: transparent;
+  border: solid 0.2em var(--headline);
+  border-radius: 5px;
+  outline: none;
+  padding: 0em 0.8em 0em 0.8em;
+  color: var(--headliness);
+  transition: 300ms;
+
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.Overlay-search .Search .search-active {
+  opacity: 1;
+  width: 40%;
+}
+
+.Overlay-search .Search .search-hidden {
+  width: 1.5em;
+  opacity: 0;
+}
+
+.Overlay-search .Search .style-search::placeholder {
+  color: var(--hightLight);
+}
+.Overlay-search .Search .style-search:focus {
+  background-color: #0f0e17ad;
+}
+
+.Overlay-search .Search .btn-search {
+  color: var(--headline);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5em;
+  background-color: transparent;
+  width: 2.4em;
+  height: 2.4em;
+  border: solid var(--headline) 2px;
+  border-radius: 5px;
+}
+
+
+.Overlay-search .Search .btn-search:hover {
+  background-color: #0f0e17ad;
+
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+.inputInvaild {
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.6rem #ff0000;
+}
+
+/* Overlay Search */
+
+
+/* Scroll animation */
+.hidden-animation {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(10rem);
+  transition: all 800ms;
+  
+}
+
+.active-animation {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0rem);
+}
+/* Scroll animation */
+
+/* instagram */
+.Overlay-instagram {
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  height: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* instagram */
+
+
+/* REPONSIVE */
+
+@media screen and (max-width: 400px) {
+  /* Atur tampilan sesuai dengan kebutuhan Anda */
+  html {
+    font-size: 35%;
+  }
+
+  .webMargin {
+    height: 33vh;
+  }
+
+  section .main-title button .link-download {
+    font-size: 0.4em;
+  }
+
+  .Element-Img {
+    right: -10em;
+    width: 44em;
+    height: 44em;
+    top: -16em;
+  }
+
+  section .picture .display .btn-download {
+    width: 15%;
+    height: 16%;
+  }
+
+  section .picture .display .btn-download i {
+    font-size: 0.3em;
+  }
+
+
+}
+
+/* Tampilan responsif untuk perangkat dengan lebar hingga 600px (smartphone potret) */
+@media screen and (max-width: 600px) {
+  /* Atur tampilan sesuai dengan kebutuhan Anda */
+  html {
+    font-size: 45%;
+  }
+
+  .webMargin {
+    height: 40vh;
+  }
+
+  section .main-title button .link-download {
+    font-size: 0.5em;
+  }
+
+  .Element-Img {
+    width: 44em;
+    height: 44em;
+    right: -12em;
+    top: -16em;
+  }
+
+  section .picture .display .btn-download i {
+    font-size: 0.5em;
+  }
+
+  .img-dispaly {
+    padding: 0em 12% 0rem;
+    grid-template-columns: 10rem 10rem;
+  }
+
+  section .picture {
+    width: 17.5em;
+    height: 20em;
+    /* background-color: brown; */
+  }
+
+  section .picture .display {
+    width: 17.5em;
+    height: 17.5em;
+    border-radius: 0.6em;
+  }
+
+  section .picture .display .btn-download i {
+    font-size: 0.8em;
+  }
+
+  section .picture img {
+    width: 18em;
+  }
+
+  section .picture .title {
+    margin-top: 1em;
+  }
+
+  section .picture .title .txt h3 {
+    font-size: 1.7em;
+  }
+
+  section .picture .title .txt p {
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+
+  section .picture .title .type p {
+    font-size: 1em;
+  }
+
+  section .picture .title .type .btn-type {
+    width: 6.5em;
+  }
+
+  section .picture .title .type .select-type {
+    width: 6.5em;
+    margin-top: 6.5em;
+  }
+
+  section .picture .title .type .select-type ul li p {
+    font-size: 0.9em;
+  }
+
+  /* Overlay select- format */
+
+  section .picture .select-format {
+    background-color: var(--headline);
+    border-radius: 5px;
+    width: 12em;
+    height: max-content;
+    padding: 0.2em 0.3em 0.3em 0.2em;
+    position: absolute;
+    top: 14em;
+    left: 6.5em;
+    display: none;
+  }
+
+  .Overlay-search .Search .style-search {
+    border: solid var(--headline) 2px;
+    height: 2em;
+  }
+
+  /* .Overlay-search .Search .btn-search {
+    width: 3.5em;
+    height: 3.5em;
+  } */
+}
+
+/* Tampilan responsif untuk perangkat dengan lebar 601px hingga 1024px (tablet dan layar kecil) */
+@media screen and (min-width: 601px) and (max-width: 1024px) and (max-width: 1024px) {
+  /* Atur tampilan sesuai dengan kebutuhan Anda */
+  html {
+    font-size: 65%;
+  }
+
+  .webMargin {
+    height: 80vh;
+  }
+
+  section main button .link-download {
+    font-size: 0.7em;
+  }
+
+  section .picture .display .btn-download i {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-height: 540px) and (orientation: landscape) {
+  .Element-Img {
+    width: 45em;
+    height: 45em;
+  }
+
+}
+
+/* Tampilan responsif untuk perangkat dengan lebar 1025px hingga 1440px (tablet besar dan layar laptop) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Atur tampilan sesuai dengan kebutuhan Anda */
+  html {
+    font-size: 85%;
+  }
+}
+
+/* Tampilan responsif untuk perangkat dengan lebar lebih dari 1440px (layar desktop besar) */
+@media screen and (min-width: 1441px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Tampilan responif jika DESKTOP MODE */
+@media screen and (min-height: 1374px) {
+  section main {
+    top: 35em;
+    transform: translate(0%, 0%);
+  }
+}
+
+/* REPONSIVE endddd */
