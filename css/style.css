@@ -73,13 +73,16 @@ nav .content .icon li {
   font-size: 1.1em;
   margin: 0em 1em 0em 1em;
 }
+
 /* Navigasi  end*/
 .webMargin {
   height: 100vh;
 }
+
 nav .content .icon .search {
   position: relative;
 }
+
 nav .content .icon .search p {
   font-size: 0.8em;
   font-weight: 400;
@@ -100,6 +103,7 @@ nav .content .icon .search:hover p {
   top: 0.2em;
   left: -4em;
 }
+
 section .main-title {
   position: relative;
   height: 100%;
@@ -112,6 +116,7 @@ section .main-title .title {
   top: 50%;
   transform: translate(0%, -50%);
 }
+
 section .main-title .title h1 {
   z-index: 10;
   font-size: 3em;
@@ -194,6 +199,7 @@ section .picture .display {
   overflow: hidden;
   position: relative;
 }
+
 section .picture .display .btn-download {
   bottom: 0.5em;
   left: -2.3em;
@@ -214,12 +220,15 @@ section .picture .display .btn-download i {
   font-size: 1em;
   display: block;
 }
+
 section .picture .display:hover img {
   filter: blur(2px);
 }
+
 section .picture .display:hover .btn-download {
   left: 0.5em;
 }
+
 section .picture img {
   position: absolute;
   top: 50%;
@@ -254,6 +263,7 @@ section .picture .title .type {
   -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
+
 section .picture .title .type p {
   font-size: 0.8em;
 }
@@ -339,6 +349,7 @@ section .picture .select-format h6 {
   color: var(--clr-bg);
   font-size: 0.7em;
 }
+
 section .picture .select-format ul li {
   margin: 0.5em 0em 0.5em 0em;
   padding: 0.3em;
@@ -349,6 +360,7 @@ section .picture .select-format ul li {
 section .picture .select-format ul li:hover {
   background-color: var(--paragaraf);
 }
+
 section .picture .select-format ul li a {
   text-decoration: none;
 }
@@ -430,6 +442,7 @@ section {
 .Overlay-search .Search .style-search::placeholder {
   color: var(--hightLight);
 }
+
 .Overlay-search .Search .style-search:focus {
   background-color: #0f0e17ad;
 }
@@ -457,12 +470,15 @@ section {
   0% {
     margin-left: 0rem;
   }
+
   25% {
     margin-left: 0.5rem;
   }
+
   75% {
     margin-left: -0.5rem;
   }
+
   100% {
     margin-left: 0rem;
   }
@@ -482,7 +498,7 @@ section {
   filter: blur(15px);
   transform: translateY(10rem);
   transition: all 800ms;
-  
+
 }
 
 .active-animation {
@@ -490,6 +506,7 @@ section {
   filter: blur(0px);
   transform: translateX(0rem);
 }
+
 /* Scroll animation */
 
 /* instagram */
@@ -501,21 +518,62 @@ section {
   right: 0;
   width: 100%;
   height: 100%;
-
+  padding: 0em 3% 0rem;
+  background-image: linear-gradient(to right top, rgb(115, 115, 115), rgb(38, 38, 38));
   opacity: 0;
   visibility: hidden;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 800ms;
 
 }
+
+.Overlay-instagram:target{
+  opacity: 0;
+  visibility: hidden;
+  
+}
+
+.Overlay-instagram .buffer {
+  display: flex;
+  flex-direction: row;
+  width: 54em;
+}
+
+.Overlay-instagram .buffer-img a img {
+  width: 15em;
+}
+
+.Overlay-instagram .buffer-txt{
+  padding: 1em 1em 1em 5em;
+}
+
+.Overlay-instagram .buffer-txt h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.Overlay-instagram .buffer-txt h2 strong {
+  color: var(--hightLight);
+}
+
+.Overlay-instagram .buffer-txt h2 strong:hover {
+  text-decoration: underline;
+}
+
+.Overlay-instagram .buffer-txt p{
+  margin-top: 1em;
+}
+
 /* instagram */
 
 
 /* REPONSIVE */
 
 @media screen and (max-width: 400px) {
+
   /* Atur tampilan sesuai dengan kebutuhan Anda */
   html {
     font-size: 35%;
@@ -550,6 +608,7 @@ section {
 
 /* Tampilan responsif untuk perangkat dengan lebar hingga 600px (smartphone potret) */
 @media screen and (max-width: 600px) {
+
   /* Atur tampilan sesuai dengan kebutuhan Anda */
   html {
     font-size: 45%;
@@ -656,6 +715,7 @@ section {
 
 /* Tampilan responsif untuk perangkat dengan lebar 601px hingga 1024px (tablet dan layar kecil) */
 @media screen and (min-width: 601px) and (max-width: 1024px) and (max-width: 1024px) {
+
   /* Atur tampilan sesuai dengan kebutuhan Anda */
   html {
     font-size: 65%;
@@ -684,6 +744,7 @@ section {
 
 /* Tampilan responsif untuk perangkat dengan lebar 1025px hingga 1440px (tablet besar dan layar laptop) */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
+
   /* Atur tampilan sesuai dengan kebutuhan Anda */
   html {
     font-size: 85%;
