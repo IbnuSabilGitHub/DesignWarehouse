@@ -342,7 +342,7 @@ const Section = document.querySelectorAll('.blur')
 const searchInput = document.getElementById('SearchInput');
 const OverlaySearch = document.querySelector('.Overlay-search');
 const btnValueSearch = document.querySelector('.btn-search');
-let searchActive = false;
+let overlay = false;
 
 
 // function unutk mengaktifkan search
@@ -379,11 +379,11 @@ let itemStatusFound = true;
 
 // Fitur search, akan melakukan blur terhadap backgroud atau (section) dan memuncul kan overlay search
 btnSearch.addEventListener('click', function () {
-    if (searchActive) {  // jika searchActive == ture 
+    if (overlay) {  // jika overlay == ture 
 
         setTimeout(hiddenSearch, 0); //menutup bar search dengan fungsi rekursif setTimeout dan calling fungsi hiddenSearch
         setTimeout(hiddenAllSearch, 800); //menutup semua setelah janga waktu 8s
-        searchActive = false; // ubah status Ke nonActive
+        overlay = false; // ubah status Ke nonActive
 
 
     } else { // jika tidak buka search
@@ -395,7 +395,7 @@ btnSearch.addEventListener('click', function () {
         OverlaySearch.style.top = "0vh";
         OverlaySearch.style.visibility = "visible";
         setTimeout(activeSearch, 1400);
-        searchActive = true;
+        overlay = true;
     }
 });
 
@@ -418,7 +418,7 @@ btnValueSearch.addEventListener('click', function () {
         // console.log('ditemukan');
         setTimeout(hiddenSearch, 0);
         setTimeout(hiddenAllSearch, 800);
-        searchActive = false;
+        overlay = false;
     } else {  // b
         // console.log('non ditemukan');
         // Panggil fungsi untuk mengaktifkan animasi 
@@ -513,7 +513,7 @@ function searchEngine() {
                         itemStatusFound = false; // ubah status bar search menjadi false agar tidak menutup bar search
                         // console.log('tidak di temukan');
                     })
-                }else{
+                } else {
                     itemStatusFound = true; // ubah status bar search menjadi false agar tidak menutup bar search
                     allNegative = true;
                 }
@@ -522,11 +522,24 @@ function searchEngine() {
     })
 }
 
+// Code Active Overlay Insagramc
+const overlayInstagram = document.querySelector('.Overlay-instagram');
+const btnInstagram = document.getElementById('btn-ig');
+const contentInsagram = document.querySelector('.buffer')
+
+btnInstagram.addEventListener('click', function () {
+    if (!overlay) {
+        overlayInstagram.classList.toggle('Overlay-instagram-active');
+
+    }
+})
 
 
-
-
-
+document.addEventListener('click', function (e) {
+    if (!contentInsagram.contains(e.target) && !btnInstagram.contains(e.target)) {
+        overlayInstagram.classList.remove('Overlay-instagram-active');
+    }
+})
 
 
 

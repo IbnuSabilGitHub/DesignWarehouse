@@ -519,7 +519,7 @@ section {
   width: 100%;
   height: 100%;
   padding: 0em 3% 0rem;
-  background-image: linear-gradient(to right top, rgb(115, 115, 115), rgb(38, 38, 38));
+  background-image: linear-gradient(to right top, rgba(115, 115, 115, 0.900), rgba(38, 38, 38, 0.900));
   opacity: 0;
   visibility: hidden;
 
@@ -530,9 +530,9 @@ section {
 
 }
 
-.Overlay-instagram:target{
-  opacity: 0;
-  visibility: hidden;
+.Overlay-instagram-active{
+  opacity: 1;
+  visibility: visible;
   
 }
 
@@ -555,11 +555,13 @@ section {
   font-weight: bold;
 }
 
-.Overlay-instagram .buffer-txt h2 strong {
+.Overlay-instagram .buffer-txt h2 a {
   color: var(--hightLight);
+  text-decoration: none;
+
 }
 
-.Overlay-instagram .buffer-txt h2 strong:hover {
+.Overlay-instagram .buffer-txt h2 a:hover {
   text-decoration: underline;
 }
 
