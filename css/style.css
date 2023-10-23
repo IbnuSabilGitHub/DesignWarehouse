@@ -168,7 +168,7 @@ section .main-title button:hover .link-download {
   width: 60em;
   height: 60em;
   overflow: hidden;
-  background-image: url("Image/Aset/Yanglain/Kafka_3.jpeg");
+  background-image: url("/Image/Aset/Yanglain/Kafka_3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
