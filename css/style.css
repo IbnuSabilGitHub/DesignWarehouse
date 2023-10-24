@@ -5,6 +5,10 @@
   --paragaraf: #a7a9be;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--clr-bg);
   color: var(--headline);
@@ -568,6 +572,20 @@ section {
 .Overlay-instagram .buffer-txt p{
   margin-top: 1em;
 }
+
+/* Style scroll bar */
+::-webkit-scrollbar {
+  width: .6em;
+  background-color:#4f4f50;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--hightLight);
+  border-radius: .6em;
+
+}
+
 
 /* instagram */
 
