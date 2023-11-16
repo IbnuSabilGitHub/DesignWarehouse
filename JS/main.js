@@ -542,26 +542,4 @@ document.addEventListener('click', function (e) {
 })
 
 
-// Google Dirve API-IMPORT
-gapi.load('client', function () {
-    gapi.client.init({
-        apiKey: 'AIzaSyA_X4fuxCE1lw9at676Ch3YPygQ40oDzAA',
-        clientId: '677752944861-bdv9d9nso3kscscek0dogj32kkfa27ma.apps.googleusercontent.com',
-        discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'],
-        scope: 'https://www.googleapis.com/auth/drive.readonly'
-    }).then(function () {
-        // Mengambil daftar file dalam folder
-        gapi.client.drive.files.list({
-            q: "1O3AjVijiUeeQSar6efrzoHXR6mobmN4c" // Gantilah 'FOLDER_ID' dengan ID folder Google Drive Anda
-        }).then(function(response) {
-            var files = response.result.files;
-            console.log(files)
-        });
-    });
-});
-
-
-
-
-
 
