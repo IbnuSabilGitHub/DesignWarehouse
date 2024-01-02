@@ -85,11 +85,11 @@ for (let i = 0; i < items.length; i++) {
 // array matriks untuk menyimpan link
 const FormatImgPNG = [
     [
-        '/Image/Aset/PNG/hutao/HUTAO_Default.png',
-        '/Image/Aset/PNG/hutao/HUTAO_Transparent.png',
-        '/Image/Aset/PNG/hutao/HUTAO_Green.png',
-        '/Image/Aset/PNG/hutao/HUTAO_Black.png',
-        '/Image/Aset/PNG/hutao/HUTAO_White.png'
+        'Image/Aset/PNG/hutao/HUTAO_Default.png',
+        'Image/Aset/PNG/hutao/HUTAO_Transparent.png',
+        'Image/Aset/PNG/hutao/HUTAO_Green.png',
+        'Image/Aset/PNG/hutao/HUTAO_Black.png',
+        'Image/Aset/PNG/hutao/HUTAO_White.png'
     ],
     [
         'Image/Aset/PNG/bocchi/Bocchi_Default.png',
@@ -112,25 +112,25 @@ const FormatImgPNG = [
         'Image/Aset/PNG/air/Shoes_Logo_Black.png'
     ],
     [
-        '/Image/Aset/PNG/coffee_1/Coffe_Logo_1_Default.png',
-        '/Image/Aset/PNG/coffee_1/Coffe_Logo_1_Transparent.png',
-        '/Image/Aset/PNG/coffee_1/Coffe_Logo_1_Green.png',
-        '/Image/Aset/PNG/coffee_1/Coffe_Logo_1_Black.png',
-        '/Image/Aset/PNG/coffee_1/Coffe_Logo_1_White.png'
+        'Image/Aset/PNG/coffee_1/Coffe_Logo_1_Default.png',
+        'Image/Aset/PNG/coffee_1/Coffe_Logo_1_Transparent.png',
+        'Image/Aset/PNG/coffee_1/Coffe_Logo_1_Green.png',
+        'Image/Aset/PNG/coffee_1/Coffe_Logo_1_Black.png',
+        'Image/Aset/PNG/coffee_1/Coffe_Logo_1_White.png'
     ],
     [
-        '/Image/Aset/PNG/coffee_2/Coffe_Logo_2_Default.png',
-        '/Image/Aset/PNG/coffee_2/Coffe_Logo_2_Transparent.png',
-        '/Image/Aset/PNG/coffee_2/Coffe_Logo_2_Green.png',
-        '/Image/Aset/PNG/coffee_2/Coffe_Logo_2_Black.png',
-        '/Image/Aset/PNG/coffee_2/Coffe_Logo_2_White.png'
+        'Image/Aset/PNG/coffee_2/Coffe_Logo_2_Default.png',
+        'Image/Aset/PNG/coffee_2/Coffe_Logo_2_Transparent.png',
+        'Image/Aset/PNG/coffee_2/Coffe_Logo_2_Green.png',
+        'Image/Aset/PNG/coffee_2/Coffe_Logo_2_Black.png',
+        'Image/Aset/PNG/coffee_2/Coffe_Logo_2_White.png'
     ],
     [
-        '/Image/Aset/PNG/coffee_3/Coffe_Logo_3_Default.png',
-        '/Image/Aset/PNG/coffee_3/Coffe_Logo_3_Transparent.png',
-        '/Image/Aset/PNG/coffee_3/Coffe_Logo_3_Green.png',
-        '/Image/Aset/PNG/coffee_3/Coffe_Logo_3_Black.png',
-        '/Image/Aset/PNG/coffee_3/Coffe_Logo_3_White.png'
+        'Image/Aset/PNG/coffee_3/Coffe_Logo_3_Default.png',
+        'Image/Aset/PNG/coffee_3/Coffe_Logo_3_Transparent.png',
+        'Image/Aset/PNG/coffee_3/Coffe_Logo_3_Green.png',
+        'Image/Aset/PNG/coffee_3/Coffe_Logo_3_Black.png',
+        'Image/Aset/PNG/coffee_3/Coffe_Logo_3_White.png'
     ]
 ];
 
@@ -161,22 +161,22 @@ const FormatImgJPG = [
         'Image/Aset/JPG/air/Shoes_Logo_Black.jpg'
     ],
     [
-        '/Image/Aset/JPG/coffee_1/Coffe_Logo_1_Default.jpg',
-        '/Image/Aset/JPG/coffee_1/Coffe_Logo_1_Green.jpg',
-        '/Image/Aset/JPG/coffee_1/Coffe_Logo_1_Black.jpg',
-        '/Image/Aset/JPG/coffee_1/Coffe_Logo_1_White.jpg'
+        'Image/Aset/JPG/coffee_1/Coffe_Logo_1_Default.jpg',
+        'Image/Aset/JPG/coffee_1/Coffe_Logo_1_Green.jpg',
+        'Image/Aset/JPG/coffee_1/Coffe_Logo_1_Black.jpg',
+        'Image/Aset/JPG/coffee_1/Coffe_Logo_1_White.jpg'
     ],
     [
-        '/Image/Aset/JPG/coffee_2/Coffe_Logo_2_Default.jpg',
-        '/Image/Aset/JPG/coffee_2/Coffe_Logo_2_Green.jpg',
-        '/Image/Aset/JPG/coffee_2/Coffe_Logo_2_Black.jpg',
-        '/Image/Aset/JPG/coffee_2/Coffe_Logo_2_White.jpg'
+        'Image/Aset/JPG/coffee_2/Coffe_Logo_2_Default.jpg',
+        'Image/Aset/JPG/coffee_2/Coffe_Logo_2_Green.jpg',
+        'Image/Aset/JPG/coffee_2/Coffe_Logo_2_Black.jpg',
+        'Image/Aset/JPG/coffee_2/Coffe_Logo_2_White.jpg'
     ],
     [
-        '/Image/Aset/JPG/coffee_3/Coffe_Logo_3_Default.jpg',
-        '/Image/Aset/JPG/coffee_3/Coffe_Logo_3_Green.jpg',
-        '/Image/Aset/JPG/coffee_3/Coffe_Logo_3_Black.jpg',
-        '/Image/Aset/JPG/coffee_3/Coffe_Logo_3_White.jpg'
+        'Image/Aset/JPG/coffee_3/Coffe_Logo_3_Default.jpg',
+        'Image/Aset/JPG/coffee_3/Coffe_Logo_3_Green.jpg',
+        'Image/Aset/JPG/coffee_3/Coffe_Logo_3_Black.jpg',
+        'Image/Aset/JPG/coffee_3/Coffe_Logo_3_White.jpg'
     ]
 ];
 
@@ -209,25 +209,25 @@ const FormatImgSVG = [
         'Image/Aset/SVG/air/Shoes_Logo_Black.svg'
     ],
     [
-        '/Image/Aset/SVG/coffee_1/Coffe_Logo_1_Default.svg',
-        '/Image/Aset/SVG/coffee_1/Coffe_Logo_1_Transparent.svg',
-        '/Image/Aset/SVG/coffee_1/Coffe_Logo_1_Green.svg',
-        '/Image/Aset/SVG/coffee_1/Coffe_Logo_1_Black.svg',
-        '/Image/Aset/SVG/coffee_1/Coffe_Logo_1_White.svg'
+        'Image/Aset/SVG/coffee_1/Coffe_Logo_1_Default.svg',
+        'Image/Aset/SVG/coffee_1/Coffe_Logo_1_Transparent.svg',
+        'Image/Aset/SVG/coffee_1/Coffe_Logo_1_Green.svg',
+        'Image/Aset/SVG/coffee_1/Coffe_Logo_1_Black.svg',
+        'Image/Aset/SVG/coffee_1/Coffe_Logo_1_White.svg'
     ],
     [
-        '/Image/Aset/SVG/coffee_2/Coffe_Logo_2_Default.svg',
-        '/Image/Aset/SVG/coffee_2/Coffe_Logo_2_Transparent.svg',
-        '/Image/Aset/SVG/coffee_2/Coffe_Logo_2_Green.svg',
-        '/Image/Aset/SVG/coffee_2/Coffe_Logo_2_Black.svg',
-        '/Image/Aset/SVG/coffee_2/Coffe_Logo_2_White.svg'
+        'Image/Aset/SVG/coffee_2/Coffe_Logo_2_Default.svg',
+        'Image/Aset/SVG/coffee_2/Coffe_Logo_2_Transparent.svg',
+        'Image/Aset/SVG/coffee_2/Coffe_Logo_2_Green.svg',
+        'Image/Aset/SVG/coffee_2/Coffe_Logo_2_Black.svg',
+        'Image/Aset/SVG/coffee_2/Coffe_Logo_2_White.svg'
     ],
     [
-        '/Image/Aset/SVG/coffee_3/Coffe_Logo_3_Default.svg',
-        '/Image/Aset/SVG/coffee_3/Coffe_Logo_3_Transparent.svg',
-        '/Image/Aset/SVG/coffee_3/Coffe_Logo_3_Green.svg',
-        '/Image/Aset/SVG/coffee_3/Coffe_Logo_3_Black.svg',
-        '/Image/Aset/SVG/coffee_3/Coffe_Logo_3_White.svg'
+        'Image/Aset/SVG/coffee_3/Coffe_Logo_3_Default.svg',
+        'Image/Aset/SVG/coffee_3/Coffe_Logo_3_Transparent.svg',
+        'Image/Aset/SVG/coffee_3/Coffe_Logo_3_Green.svg',
+        'Image/Aset/SVG/coffee_3/Coffe_Logo_3_Black.svg',
+        'Image/Aset/SVG/coffee_3/Coffe_Logo_3_White.svg'
     ]
 ];
 
