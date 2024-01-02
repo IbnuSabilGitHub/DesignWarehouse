@@ -85,11 +85,11 @@ for (let i = 0; i < items.length; i++) {
 // array matriks untuk menyimpan link
 const FormatImgPNG = [
     [
-        'Image/Aset/PNG/hutao/HUTAO_Default.png',
-        'Image/Aset/PNG/hutao/HUTAO_Transparent.png',
-        'Image/Aset/PNG/hutao/HUTAO_Green.png',
-        'Image/Aset/PNG/hutao/HUTAO_Black.png',
-        'Image/Aset/PNG/hutao/HUTAO_White.png'
+        '/Image/Aset/PNG/hutao/HUTAO_Default.png',
+        '/Image/Aset/PNG/hutao/HUTAO_Transparent.png',
+        '/Image/Aset/PNG/hutao/HUTAO_Green.png',
+        '/Image/Aset/PNG/hutao/HUTAO_Black.png',
+        '/Image/Aset/PNG/hutao/HUTAO_White.png'
     ],
     [
         'Image/Aset/PNG/bocchi/Bocchi_Default.png',
